@@ -33,6 +33,7 @@ namespace opencog
 // or if edges link to other edges
 class TulipWriter {
     
+    BaseServer& server;
     std::ofstream myfile;
     std::string filename;
     //bool writeNode(Handle h);
@@ -50,7 +51,8 @@ class TulipWriter {
 
 public:
 
-    TulipWriter(const std::string &_filename) : filename(_filename) {};
+    TulipWriter(BaseServer& _server, const std::string &_filename)
+    	: server(_server), filename(_filename) {};
     ~TulipWriter() {};
 
     //! Eventually support writing only a certain depth from a node.
