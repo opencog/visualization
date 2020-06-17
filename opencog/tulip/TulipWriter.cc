@@ -34,7 +34,7 @@ namespace opencog {
 
 void TulipWriter::writeNodes()
 {
-    AtomSpace& a = BaseServer::getAtomSpace();
+    AtomSpace& a = server.getAtomSpace();
 
     HandleSeq nodeHandles;
     a.get_handles_by_type(back_inserter(nodeHandles), (Type) NODE, true );
@@ -65,7 +65,7 @@ void TulipWriter::writeHeader(const std::string &comment)
 
 void TulipWriter::writeCluster(Handle setLink)
 {
-    AtomSpace& a = BaseServer::getAtomSpace();
+    AtomSpace& a = server.getAtomSpace();
 
     HandleSeq nodeHandles;
     a.get_handles_by_type(back_inserter(nodeHandles), (Type) NODE, true );
@@ -113,7 +113,7 @@ void TulipWriter::writeCluster(Handle setLink)
 
 void TulipWriter::writeEdges()
 {
-    AtomSpace& a = BaseServer::getAtomSpace();
+    AtomSpace& a = server.getAtomSpace();
 
     HandleSeq nodeHandles;
     a.get_handles_by_type(back_inserter(nodeHandles), (Type) NODE, true );
@@ -133,7 +133,7 @@ void TulipWriter::writeEdges()
 
 void TulipWriter::writeNodeNames()
 {
-    AtomSpace& a = BaseServer::getAtomSpace();
+    AtomSpace& a = server.getAtomSpace();
 
     // Including type of link nodes
     HandleSeq nodeHandles;
@@ -169,7 +169,7 @@ void TulipWriter::writeDefaultColouring()
 
 void TulipWriter::writeTruthValue()
 {
-    AtomSpace& a = BaseServer::getAtomSpace();
+    AtomSpace& a = server.getAtomSpace();
 
     HandleSeq handles;
     a.get_handles_by_type(back_inserter(handles), (Type) ATOM, true );
@@ -213,7 +213,7 @@ void TulipWriter::writeTruthValue()
 
 void TulipWriter::writeShapes()
 {
-    AtomSpace& a = BaseServer::getAtomSpace();
+    AtomSpace& a = server.getAtomSpace();
 
     HandleSeq nodeHandles;
     a.get_handles_by_type(back_inserter(nodeHandles), (Type) NODE, true );
@@ -233,7 +233,7 @@ void TulipWriter::writeShapes()
 bool TulipWriter::write(Handle seed, int depth, Handle setLink)
 {
     //CogServer& cogserver = static_cast<CogServer&>(server());
-    //AtomSpace* a = BaseServer::getAtomSpace();
+    //AtomSpace* a = server.getAtomSpace();
     myfile.open( filename.c_str() );
     //int notLinkOffsetIndex = 1000000;
 
