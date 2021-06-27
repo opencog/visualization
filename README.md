@@ -2,13 +2,11 @@
 Graphics and Visualization Tools
 --------------------------------
 
-In addition to the code here,
-There is a standalone AtomSpace visualization tool available in the
-external-tools repository:
+In addition to the code here, there is a web-browser visualizer in
 
-https://github.com/opencog/external-tools/tree/master/AtomViewer
+https://github.com/opencog/atomspace-explorer
 
-Its probably better than what is here.
+Its got visual bling!
 
 Other experimental visualization tools are:
 
