@@ -4,7 +4,7 @@ Graphics and Visualization Tools
 
 This repository has been archived. The three tools below have not been
 updated since 2008, and depend on APIs that no longer exist. The things
-that they did were not very sophisticated; it would take you ''less''
+that they did were not very sophisticated; it would take you **less**
 time to write hand-written scripts to export to dotty or tulip,
 than it would take for you to figure out how to use this old code.
 
@@ -17,9 +17,7 @@ In the meanwhile, there is a web-browser visualizer in
 
 https://github.com/opencog/atomspace-explorer
 
-Its got visual bling!  Unfortunately, it dates to 2017 and depends
-on obsolete interfaces that no longer exist. The basic demo works,
-but that's all. This project needs a maintainer.
+Its got visual bling!
 
 The visualization tools in this git repo are:
 
